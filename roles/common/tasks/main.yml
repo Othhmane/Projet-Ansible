@@ -1,0 +1,12 @@
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install common tools
+  apt:
+    name:
+      - vim
+      - curl
+      - wget
+      - software-properties-common
+    state: present

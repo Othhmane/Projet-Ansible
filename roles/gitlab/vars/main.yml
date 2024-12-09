@@ -1,0 +1,2 @@
+gitlab_domain: gitlab.vlne.lan
+gitlab_storage_path: "/var/opt/gitlab/git-data"
