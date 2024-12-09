@@ -1,4 +1,4 @@
-# Documentation du Projet Ansible : Déploiement GitLab et PostgreSQL
+# Documentation du Projet Ansible
 
 ## Description du Projet
 
