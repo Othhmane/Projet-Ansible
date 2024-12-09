@@ -66,7 +66,7 @@
   become: yes
   become_user: postgres
 
-- name: Assigner vagrant comme propriétaire des bases de données dev, stage et prod
+- name: Assigner vagrant comme proprietaire des bases de données dev, stage et prod
   ansible.builtin.shell:
     cmd: "psql -c \"ALTER DATABASE {{ item }} OWNER TO vagrant;\""
   loop:

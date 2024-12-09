@@ -3,11 +3,11 @@ all:
     gitlab:
       hosts:
         gitlab-server:
-          ansible_host: 192.168.224.130 
+          ansible_host: 192.168.1.10 
           ansible_user: root
     postgres:
       hosts:
         postgres-server:
-          ansible_host: 192.168.224.131
+          ansible_host: 192.168.1.11
           ansible_user: root
           ansible_python_interpreter: /usr/bin/python3

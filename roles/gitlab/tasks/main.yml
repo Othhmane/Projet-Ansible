@@ -7,11 +7,11 @@
 - name: Exécuter le script d'installation de GitLab
   command: bash /tmp/gitlab-install.sh
 
-- name: Mettre à jour le cache apt après le script GitLab
+- name: Mettre a jour le cache apt après le script GitLab
   apt:
     update_cache: yes
 
-- name: Installer GitLab EE
+- name: Install GitLab EE
   apt:
     name: gitlab-ee
     state: present

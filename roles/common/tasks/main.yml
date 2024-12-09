@@ -2,7 +2,7 @@
   apt:
     update_cache: yes
 
-- name: Installer common tools
+- name: Install common tools
   apt:
     name:
       - vim
