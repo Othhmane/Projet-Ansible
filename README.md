@@ -44,24 +44,3 @@ L'objectif est de garantir la reproductibilité et la centralisation de la gesti
 
 #### Handler :
 - Redémarrer PostgreSQL si une modification de configuration est effectuée.
-
----
-
-## Fichiers Importants
-
-### Inventaire : `inventory.yml`
-Définit les hôtes cibles pour le déploiement :
-```yaml
-all:
-  children:
-    gitlab:
-      hosts:
-        gitlab-server:
-          ansible_host: 192.168.224.130
-          ansible_user: root
-    postgres:
-      hosts:
-        postgres-server:
-          ansible_host: 192.168.224.131
-          ansible_user: root
-          ansible_python_interpreter: /usr/bin/python3
